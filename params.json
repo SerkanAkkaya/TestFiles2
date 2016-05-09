@@ -1,0 +1,6 @@
+{
+  "name": "Testfiles2",
+  "tagline": "",
+  "body": "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <meta name=\"viewport\" content=\"initial-scale=1.0\">\r\n    <meta charset=\"utf-8\">\r\n    <title>KML Layers</title>\r\n    <style>\r\n        html, body {\r\n            height: 100%;\r\n            margin: 0;\r\n            padding: 0;\r\n        }\r\n\r\n        #map {\r\n            height: 100%;\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n    <div id=\"map\"></div>\r\n    <script>\r\n\r\n      function initMap() {\r\n        var map = new google.maps.Map(document.getElementById('map'), {\r\n          zoom: 11,\r\n          center: {lat: 41.876, lng: -87.624}\r\n        });\r\n\r\n        var ctaLayer = new google.maps.KmlLayer({\r\n          url: 'http://googlemaps.github.io/js-v2-samples/ggeoxml/cta.kml',\r\n          map: map\r\n        });\r\n      }\r\n    </script>\r\n    <script async defer\r\n            src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyDsEhxdLEvsBYMJSZNIBBsJWjqnWOAEQsU&callback=initMap\">\r\n    </script>\r\n</body>\r\n</html>\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
